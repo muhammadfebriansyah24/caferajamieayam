@@ -78,7 +78,7 @@ const menuData = [
         name: "Es Lemon Tea",
         category: "minuman",
         price: 8000,
-        image: "Assets/EsLemonTea.png",
+        image: "assets/EsLemonTea.png",
         description: "Es Teh Manis Plus Jeruk Lemon Yang Menyegarkan, diracik dengan sepenuh hati untuk menyegarkan hari Anda."
     },
     {
@@ -86,7 +86,7 @@ const menuData = [
         name: "Es Jeruk",
         category: "minuman",
         price: 7000,
-        image: "Assets/EsJeruk.png",
+        image: "assets/EsJeruk.png",
         description: "Kesegaran es jeruk peras dengan rasa jeruk asli dan gula alami tanpa pengawet, diracik dengan sepenuh hati untuk menyegarkan hari Anda."
     },
     {
@@ -94,7 +94,7 @@ const menuData = [
         name: "Jeruk Hangat",
         category: "minuman",
         price: 7000,
-        image: "Assets/JerukHangat.png",
+        image: "assets/JerukHangat.png",
         description: "Kesegaran es jeruk peras dengan rasa jeruk asli dan gula alami tanpa pengawet, diracik dengan sepenuh hati untuk menyegarkan hari Anda."
     },
     {
@@ -102,7 +102,7 @@ const menuData = [
         name: "Es Teh Manis",
         category: "minuman",
         price: 4000,
-        image: "Assets/EsTehManis.png",
+        image: "assets/EsTehManis.png",
         description: "Teh manis dingin yang disajikan segar untuk menemani berbagai hidangan, diracik dengan sepenuh hati untuk menyegarkan hari Anda."
     },
     {
@@ -110,7 +110,7 @@ const menuData = [
         name: "Teh Tawar",
         category: "minuman",
         price: 4000,
-        image: "Assets/TehTawarHangat.png",
+        image: "assets/TehTawarHangat.png",
         description: "Teh tawar panas yang disajikan untuk menemani berbagai hidangan, diracik dengan sepenuh hati untuk menyegarkan hari Anda."
     },
     {
@@ -118,7 +118,7 @@ const menuData = [
         name: "Teh Manis",
         category: "minuman",
         price: 4000,
-        image: "Assets/TehManisHangat.png",
+        image: "assets/TehManisHangat.png",
         description: "Teh manis hangat yang disajikan segar untuk menemani berbagai hidangan, diracik dengan sepenuh hati untuk menyegarkan hari Anda."
     },
     {
@@ -126,7 +126,7 @@ const menuData = [
         name: "Air Mineral",
         category: "minuman",
         price: 4000,
-        image: "Assets/LeMineral.png",
+        image: "assets/LeMineral.png",
         description: "Air Mineral yang menyegarkan"
     },
     {
@@ -134,7 +134,7 @@ const menuData = [
         name: "Teh Pucuk",
         category: "minuman",
         price: 4000,
-        image: "Assets/TehPucuk.png",
+        image: "assets/TehPucuk.png",
         description: "Teh Pucuk yang untuk menyegarkan hari Anda"
     },
 ];
