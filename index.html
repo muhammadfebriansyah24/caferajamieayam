@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Raja Mie Ayam</title>
+    
+    <link rel="icon" type="image/png" href="assets/Logo Cafe Raja Mie Ayam.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/Logo%20Cafe%20Raja%20Mie%20Ayam.png" alt="Logo Raja Mie Ayam">
+            <span>Cafe Raja Mie Ayam</span>
+        </div>
+        
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav-menu">
+            <a href="#katalog" class="nav-link">Katalog Menu</a>
+            <a href="#promo" class="nav-link">Promo & Berita</a> 
+            <a href="#reservasi" class="nav-link">Reservasi</a>
+            <button id="cart-btn">🍽️ Order (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Promo Kuliner 1">
+                <div class="slide-overlay">
+                    <h2>Sensasi Bebek Goreng Empuk & Bakar Madu</h2>
+                    <p>Dibuat dari bahan premium dengan racikan bumbu warisan tradisional.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80" alt="Promo Kuliner 2">
+                <div class="slide-overlay">
+                    <h2>Hemat Kebersamaan: Paket Keluarga!</h2>
+                    <p>Dapatkan potongan harga khusus untuk makan di tempat setiap hari kerja.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80" alt="Promo Kuliner 2">
+                <div class="slide-overlay">
+                    <h2>Hemat Kebersamaan: Paket Keluarga!</h2>
+                    <p>Dapatkan potongan harga khusus untuk makan di tempat setiap hari kerja.</p>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow prev">&#10094;</button>
+        <button class="slider-arrow next">&#10095;</button>
+    </section>
+
+    <section id="katalog">
+        <h2>Menu Kami</h2>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="makanan">Makanan</button>
+            <button class="filter-btn" data-filter="minuman">Minuman</button>
+        </div>
+        <div id="menu-container" class="grid-layout"></div>
+        
+        <div id="toggle-menu-container" style="text-align: center; margin-top: 40px; display: none;">
+            <button id="toggle-menu-btn" style="background: transparent; border: none; font-size: 2.5rem; color: var(--primary); cursor: pointer; transition: transform 0.3s ease;">
+                &#9660; </button>
+        </div>
+    </section>
+
+    <section id="promo">
+        <h2>Promo & Berita Terbaru</h2>
+        <p style="text-align: center; color: #7f8c8d; margin-bottom: 30px;">(Klik kartu untuk melihat detail selengkapnya)</p>
+        <div class="promo-grid">
+            
+            <div class="promo-card">
+                <div class="promo-badge">PROMO</div>
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Promo Makan Siang">
+                <div class="promo-content">
+                    <h3>Diskon 20% Happy Hour Makan Siang!</h3>
+                    <p>Nikmati potongan harga khusus untuk menu Ayam Bakar Madu andalan kami setiap hari Senin - Jumat jam 11.00 - 14.00. Khusus untuk makan di tempat demi kepuasan santap maksimal Anda.</p>
+                    <span class="promo-date">Berlaku s/d 31 Juli 2026</span>
+                </div>
+            </div>
+
+            <div class="promo-card">
+                <div class="promo-badge news">BERITA</div>
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Grand Opening Cabang Baru">
+                <div class="promo-content">
+                    <h3>Komitmen Kami: Buka Cabang Baru di Jakarta Selatan</h3>
+                    <p>Mendengarkan tingginya antusiasme serta demi meningkatkan kenyamanan konsumen, kami resmi membuka cabang baru dengan fasilitas area bermain anak dan ruang VIP khusus.</p>
+                    <span class="promo-date">Dipublikasikan: 15 Juni 2026</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="reservasi">
+        <h2>Reservasi Meja</h2>
+        <form id="form-reservasi">
+            <div class="form-group">
+                <label for="res-name">Nama Pemesan</label>
+                <input type="text" id="res-name" required>
+            </div>
+            <div class="form-group">
+                <label for="res-date">Tanggal & Waktu</label>
+                <input type="datetime-local" id="res-date" required>
+            </div>
+            <div class="form-group">
+                <label for="res-pax">Jumlah Orang</label>
+                <input type="number" id="res-pax" min="1" required>
+            </div>
+            <button type="submit" class="btn-submit">Kirim Reservasi via WhatsApp</button>
+        </form>
+    </section>
+
+    <div id="cart-modal" class="modal-overlay">
+        <div class="modal-card">
+            <span class="close-modal" id="close-cart">&times;</span>
+            <h3>Detail Pesanan Anda</h3>
+            
+            <div id="cart-details-container" class="cart-details">
+                </div>
+            <div class="cart-total-wrapper">
+                <h3>Total Harga: <span id="cart-total-price">Rp 0</span></h3>
+            </div>
+            
+            <p style="margin-top: 15px;">Silakan selesaikan pesanan Anda melalui opsi berikut:</p>
+            <div class="order-options-container">
+                <a href="#" id="checkout-wa" class="platform-btn wa-color" target="_blank">
+                    Pesan via WhatsApp (Admin)
+                </a>
+                <a href="https://gofood.link/a/TrDnGJY" class="platform-btn gofood-color" target="_blank">Order via GoFood</a>
+                <a href="https://r.grab.com/g/2-1-6-C76EEJXCV7XYJE" class="platform-btn grabfood-color" target="_blank">Order via GrabFood</a>
+                <a href="https://shopee.co.id/universal-link/now-food" class="platform-btn shopeefood-color" target="_blank">Order via ShopeeFood</a>
+            </div>
+            <button id="reset-cart-btn" class="btn-reset">Batalkan Pesanan</button>
+        </div>
+    </div>
+
+    <div id="promo-modal" class="modal-overlay">
+        <div class="modal-card" style="text-align: left;">
+            <span class="close-modal" id="close-promo">&times;</span>
+            <img id="promo-modal-img" src="" alt="" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <div id="promo-modal-badge" class="promo-badge" style="position: relative; display: inline-block; top: 0; left: 0; margin-bottom: 10px;"></div>
+            <h2 id="promo-modal-title" style="margin-top: 0; color: var(--dark);"></h2>
+            <p id="promo-modal-desc" style="line-height: 1.6; color: #556373; font-size: 1rem;"></p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+            <p id="promo-modal-date" style="font-weight: bold; color: var(--primary); text-align: right;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Cafe Raja Mie Ayam</h3>
+            <p>📍 Alamat: Perumahan Villa Mutiara Cikarang 2 blok C7A No.11, Gang Venus Sukasejati, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530, Indonesia</p>
+            <p>📞 No. Telepon: 081284055673/08218001021</p>
+            <p style="margin-top: 20px; font-size: 0.85rem; color: #a0aec0;">&copy; 2026 Cafe Raja Mie Ayam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
